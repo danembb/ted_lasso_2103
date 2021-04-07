@@ -3,9 +3,9 @@ class Player
               :position,
               :salary
 
-  def initialize(name)
-    @name = name[:name]
-    @position = name[:position]
-    @salary = name[:salary]
+  def initialize(player)
+    @name = player[:name]
+    @position = player[:position]
+    @salary = player[:salary]
   end
 end
