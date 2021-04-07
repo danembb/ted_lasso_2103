@@ -12,4 +12,9 @@ describe Player do
 
     expect(roy.position).to eq("Center Midfielder")
   end
+
+  it 'has a salary' do
+    roy = Player.new({name: "Roy Kent", position: "Center Midfielder", salary: 1_000_000})
+    expect(roy.salary).to eq(1_000_000)
+  end
 end
